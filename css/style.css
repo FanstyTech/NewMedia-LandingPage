@@ -1,0 +1,20 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* سيتم إضافة متغيرات الألوان والخطوط هنا بناءً على التصميم */
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.6;
+    direction: rtl;
+}
+
+/* سيتم إضافة المزيد من الأنماط بناءً على التصميم */

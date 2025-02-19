@@ -1,0 +1,16 @@
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    /* ستتم إضافة الأنماط للشاشات الكبيرة */
+}
+
+@media screen and (max-width: 992px) {
+    /* ستتم إضافة الأنماط للأجهزة اللوحية */
+}
+
+@media screen and (max-width: 768px) {
+    /* ستتم إضافة الأنماط للهواتف */
+}
+
+@media screen and (max-width: 480px) {
+    /* ستتم إضافة الأنماط للهواتف الصغيرة */
+}

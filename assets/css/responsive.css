@@ -1,0 +1,420 @@
+/* Large Devices (Desktops) */
+@media (max-width: 1200px) {
+    .main-title {
+        font-size: 3rem;
+    }
+    
+    .service-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 992px) {
+    .hero-section {
+        padding: 100px 0 60px;
+    }
+    
+    .main-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-image {
+        margin-top: 2rem;
+    }
+    
+    .nav-buttons {
+        margin-top: 1rem;
+    }
+    
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .about-image {
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .main-heading {
+        font-size: 1.8rem;
+    }
+
+    .service-card {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .service-title {
+        font-size: 0.85rem;
+    }
+
+    .testimonial-card {
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-illustration {
+        margin-top: 2rem;
+    }
+
+    .client-logo img {
+        max-width: 100px;
+    }
+
+    .contact-form-wrapper {
+        margin-bottom: 2rem;
+    }
+
+    .map-container {
+        min-height: 250px;
+    }
+
+    .footer-logo {
+        max-width: 130px;
+    }
+
+    .footer-title {
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .social-link {
+        width: 32px;
+        height: 32px;
+    }
+
+    .clients-swiper {
+        padding: 0.5rem;
+    }
+
+    .client-logo {
+        height: 100px;
+        padding: 1rem;
+    }
+}
+
+/* Small Devices (Mobile) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .service-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-section {
+        text-align: center;
+        padding: 80px 0 40px;
+    }
+    
+    .service-title::after {
+        margin: 1rem auto 0;
+    }
+    
+    .about-section {
+        text-align: center;
+    }
+
+    .services-list li {
+        text-align: right;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .service-card {
+        margin-bottom: 1rem;
+    }
+
+    .main-heading {
+        font-size: 1.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .testimonial-text {
+        font-size: 1rem;
+    }
+
+    .author-name {
+        font-size: 1rem;
+    }
+
+    .author-position {
+        font-size: 0.85rem;
+    }
+
+    .client-logo {
+        padding: 0.8rem;
+    }
+
+    .client-logo img {
+        max-width: 90px;
+    }
+
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+
+    .form-floating > .form-control {
+        font-size: 0.95rem;
+    }
+
+    .location-info {
+        padding: 0.8rem;
+    }
+
+    .location-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .location-text p {
+        font-size: 0.85rem;
+    }
+
+    .footer [class*="col-"] {
+        margin-bottom: 2rem;
+    }
+
+    .footer-description {
+        font-size: 0.85rem;
+    }
+
+    .footer-links a {
+        font-size: 0.85rem;
+    }
+
+    .copyright {
+        font-size: 0.85rem;
+    }
+
+    .floating-buttons {
+        right: 15px;
+        left: auto;
+        bottom: 15px;
+        gap: 0.8rem;
+    }
+
+    .floating-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-title::after {
+        right: 50%;
+        left: auto;
+        transform: translateX(50%);
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .footer [class*="col-"] {
+        margin-bottom: 2.5rem;
+    }
+
+    .footer [class*="col-"]:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-links a:hover {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .footer-bottom {
+        margin-top: 1rem;
+    }
+
+    .clients-swiper {
+        padding: 0;
+    }
+
+    .client-logo {
+        height: 90px;
+        padding: 0.8rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 576px) {
+    .nav-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .main-title {
+        font-size: 1.8rem;
+    }
+    
+    .about-section {
+        padding: 40px 0;
+    }
+
+    .services-list li {
+        font-size: 0.9rem;
+    }
+
+    .service-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .service-title {
+        font-size: 0.8rem;
+    }
+
+    .design-description {
+        font-size: 1rem;
+    }
+
+    .feature-item {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .quote-icon {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.95rem;
+    }
+
+    .author-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .client-logo img {
+        max-width: 80px;
+    }
+
+    .contact-form-wrapper {
+        padding: 1.2rem;
+    }
+
+    .form-floating > .form-control {
+        font-size: 0.9rem;
+    }
+
+    .map-container {
+        min-height: 200px;
+    }
+
+    .footer-logo {
+        max-width: 120px;
+    }
+
+    .social-links {
+        gap: 0.8rem;
+    }
+
+    .social-link {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+    }
+
+    .footer-links li {
+        margin-bottom: 0.8rem;
+    }
+
+    .floating-buttons {
+        right: 10px;
+        left: auto;
+        bottom: 10px;
+        gap: 0.6rem;
+    }
+
+    .floating-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        padding: 3rem 0 2rem;
+    }
+
+    .footer-description {
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-title {
+        margin-bottom: 1rem;
+    }
+
+    .footer [class*="col-"] {
+        margin-bottom: 2rem;
+    }
+
+    .footer-links li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-bottom {
+        margin-top: 0.5rem;
+        padding-top: 1.5rem;
+    }
+
+    .client-logo {
+        height: 80px;
+        padding: 0.5rem;
+    }
+
+    .location-text {
+        margin-right: 0.8rem;
+        margin-left: 0;
+    }
+}

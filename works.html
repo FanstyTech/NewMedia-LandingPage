@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعمالنا المميزة - New Media</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="assets/css/libs/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/libs/aos.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/libs/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="New Media Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">سابقة أعمالنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تواصل معنا</a>
+                    </li>
+                  
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn btn-outline-primary">EN</button>
+                    <button class="btn btn-primary btn-our-service-order">اطلب خدماتنا الآن</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+   
+
+    <!-- Works Hero Section -->
+    <section class="works-hero-section">
+        <div class="container">
+            <div class="works-hero-content">
+                <h1 class="section-title">أعمالنا المميزة</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                        <li class="breadcrumb-item active">الأعمال</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="works-hero-bg">
+            <img src="assets/images/hero-pattern.svg" alt="خلفية" class="hero-pattern">
+        </div>
+    </section>
+
+    <!-- Works Filter Section -->
+    <section class="works-filter-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-buttons d-flex flex-wrap justify-content-center gap-3 mb-4">
+                        <button class="btn filter-btn active" data-filter="all">الكل</button>
+                        <button class="btn filter-btn" data-filter="design">تصميم جرافيكس</button>
+                        <button class="btn filter-btn" data-filter="web">تطوير ويب وموبايل</button>
+                        <button class="btn filter-btn" data-filter="social">إدارة حسابات السوشيال ميديا</button>
+                        <button class="btn filter-btn" data-filter="ads">إعلانات ممولة</button>
+                        <button class="btn filter-btn" data-filter="motion">موشن جرافيكس</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Works Grid will be added here in the next section -->
+            <div class="row g-4 portfolio-grid" id="works-grid">
+                <!-- Work items will be populated here -->
+            </div>
+            
+        </div>
+    </section>
+
+     <!-- Contact Section -->
+     <section class="contact-section py-5" id="contact">
+        <div class="container">
+            <div class=" mb-4">
+                <p class="contect-us-title mb-2">تواصل معنا الآن</p>
+                <h2 class="section-title">لنبدأ بتحقيق نجاحاتك معنا</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper" data-aos="fade-right">
+                        <form id="contactForm" class="contact-form">
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="fullName" placeholder="اكتب اسمك كامل">
+                                    <label for="fullName">
+                                        <i class="fas fa-user me-2"></i>
+                                        اكتب اسمك كامل
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="البريد الإلكتروني">
+                                    <label for="email">
+                                        <i class="fas fa-envelope me-2"></i>
+                                        البريد الإلكتروني
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="phone" placeholder="رقم الواتس">
+                                    <label for="phone">
+                                        <i class="fas fa-phone me-2"></i>
+                                        رقم الواتس
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" style="height: 120px" placeholder="اكتب لنا متطلبات مشروعك...."></textarea>
+                                    <label for="message">
+                                        <i class="fas fa-message me-2"></i>
+                                        اكتب لنا متطلبات مشروعك....
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary rounded-pill w-100">
+                                أرسل رسالة
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <div class="interactive-map">
+                            <img src="assets/images/location-map.svg" alt="خريطة الموقع" class="map-image">
+                            <div class="map-points">
+                                <div class="map-point" data-point="1" style="top: 30%; left: 40%;">
+                                    <div class="point-marker"></div>
+                                    <div class="point-info">
+                                        <h5>المكتب الرئيسي</h5>
+                                        <p>المقر الرئيسي لنيو ميديا</p>
+                                        <p>العنوان: شارع الرئيسي، المبنى A</p>
+                                        <p>الهاتف: 123-456-789</p>
+                                    </div>
+                                </div>
+                                <div class="map-point" data-point="2" style="top: 45%; left: 60%;">
+                                    <div class="point-marker"></div>
+                                    <div class="point-info">
+                                        <h5>فرع المبيعات</h5>
+                                        <p>فرع خدمة العملاء والمبيعات</p>
+                                        <p>العنوان: شارع التجاري، المبنى B</p>
+                                        <p>الهاتف: 987-654-321</p>
+                                    </div>
+                                </div>
+                                <div class="map-point" data-point="3" style="top: 60%; left: 50%;">
+                                    <div class="point-marker"></div>
+                                    <div class="point-info">
+                                        <h5>مركز التدريب</h5>
+                                        <p>مركز التدريب والتطوير</p>
+                                        <p>العنوان: شارع المعرفة، المبنى C</p>
+                                        <p>الهاتف: 456-789-123</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Modal -->
+    <div class="modal fade portfolio-modal" id="portfolioModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button type="button" class="close-btn" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <!-- Main Image Gallery -->
+                            <div class="portfolio-modal-gallery">
+                                <div class="swiper portfolio-gallery-swiper">
+                                    <div class="swiper-wrapper" id="modalGallery">
+                                        <!-- Images will be added here -->
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <!-- Thumbnail Gallery -->
+                                <div class="swiper portfolio-thumbs-swiper mt-3">
+                                    <div class="swiper-wrapper" id="modalThumbs">
+                                        <!-- Thumbnails will be added here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portfolio-modal-content">
+                                <h3 class="portfolio-modal-title" id="modalTitle"></h3>
+                                <div class="portfolio-modal-info">
+                                    <div class="info-item">
+                                        <i class="fas fa-user"></i>
+                                        <span id="modalClient"></span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-calendar"></i>
+                                        <span id="modalDate"></span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-folder"></i>
+                                        <span id="modalType"></span>
+                                    </div>
+                                    <div class="info-item" id="modalLinkContainer">
+                                        <i class="fas fa-link"></i>
+                                        <a href="#" id="modalLink" target="_blank">مشاهدة المشروع</a>
+                                    </div>
+                                </div>
+                                <div class="portfolio-modal-description" id="modalDescription"></div>
+                                <div class="portfolio-modal-tags" id="modalTags"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-logo mb-4">
+                        <img src="assets/images/logo.svg" alt="New Media Logo" class="img-fluid">
+                    </div>
+                    <p class="footer-description">
+                        بعض النصوص التجريبية في الوكالة وصف بسيط لمساعدة الناس على فهم بعض النصوص التجريبية في الوكالة وصف بسيط لمساعدة الناس على فهمك بشكل أفضل
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">الصفحة الرئيسية</a></li>
+                        <li><a href="#">نبذة عنا</a></li>
+                        <li><a href="#">خدماتنا</a></li>
+                        <li><a href="#">الأعمال</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">فروعنا</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">نابلس - شارع العاملين</a></li>
+                        <li><a href="#">طولكرم - كراجات فرعون</a></li>
+                        <li><a href="#">الباقة الغربية - شارع الوفاء</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">قائمة اخر تحديثات</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">البريد الإلكتروني</a></li>
+                        <li><a href="#">يوميتنا</a></li>
+                        <li><a href="#">الخدمات</a></li>
+                        <li><a href="#">الأعمال</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom text-center mt-5">
+                <div class="copyright">
+                    جميع حقوق الطبع والنشر © 2020-2025 محفوظة لشركة <a href="#" class="text-primary">New Media</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/987898285" class="floating-btn whatsapp-btn" target="_blank">
+            <!-- <span class="whatsapp-text">
+                <span class="typing-dots">...</span>
+                <span class="typing-text">تواصل معنا</span>
+            </span> -->
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="floating-btn scroll-top-btn">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="assets/js/libs/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/libs/aos.min.js"></script>
+    <script src="assets/js/libs/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaV/X9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            offset: 50
+        });
+
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter works (will be implemented when we add work items)
+                    filterWorks(filterValue);
+                });
+            });
+        });
+
+        function filterWorks(filter) {
+            const workItems = document.querySelectorAll('.work-item');
+            
+            workItems.forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
