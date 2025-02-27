@@ -256,14 +256,10 @@ function initializeServices() {
                 <section class="graphic-design-section py-5">
                     <div class="container">
                         <div class="row align-items-center gy-5">
-                            <div class="col-12 col-lg-6" data-aos="fade-right">
-                                <div class="design-image">
-                                    <img src="assets/images/services/illustration/${serviceData.icon}" alt="${serviceData.title}" class="img-fluid">
-                                </div>
-                            </div>
+                          
                             <div class="col-12 col-lg-6" data-aos="fade-left">
                                 <div class="design-content">
-                                    <h2 class="section-title with-gradient mb-4">${serviceData.title}</h2>
+                                    <h2 class="main-heading with-gradient mb-4">${serviceData.title}</h2>
                                     <p class="design-description mb-4">
                                         ${serviceData.description}
                                     </p>
@@ -279,8 +275,14 @@ function initializeServices() {
                                     
                                     </ul>
                                     <div class="mt-4">
-                                        <a href="#contact" class="btn btn-primary rounded-pill">تواصل معنا بالطلب</a>
+                                        <a href="#contact" class="btn btn-primary rounded-pill">تواصل معنا واتساب </a>
                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6" data-aos="fade-right">
+                                <div class="design-image">
+                                    <img src="assets/images/services/illustration/${serviceData.icon}" alt="${serviceData.title}" class="img-fluid">
                                 </div>
                             </div>
                         </div>

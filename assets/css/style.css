@@ -225,15 +225,7 @@ body {
     position: relative;
 }
 
-.service-title::after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 4px;
-    background: var(--bt-gradient);
-    margin-top: 1rem;
-    border-radius: 2px;
-}
+
 
 .hero-image {
     position: relative;
@@ -270,6 +262,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
+    color:var(--primary-color) ;
 }
 
 .about-text {
@@ -310,7 +303,7 @@ body {
 }
 
 .section-subtitle {
-    color: var(--primary-color);
+    color: var( --text-dark);
     font-size: 1.1rem;
     font-weight: 500;
 }
@@ -322,7 +315,7 @@ body {
 }
 
 .service-card {
-    background: #FFFFFF;
+    background: #EBF4F8;
     border-radius: 12px;
     padding: 1.5rem 1rem;
     text-align: center;
@@ -871,12 +864,11 @@ body {
 /* Clients Section */
 
 .clients-section {
-    background-color: var(--bg-dark);
-    padding: 2rem 0;
+    padding: 0rem 0;
 }
 
 .clients-swiper {
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .client-logo {
@@ -1072,7 +1064,7 @@ body {
 
 .footer-description {
     color: var(--text-dark);
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.8;
 }
 
@@ -1134,7 +1126,7 @@ body {
     color: var(--text-dark);
     text-decoration: none;
     transition: all 0.3s ease;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .footer-links a:hover {
@@ -1192,7 +1184,7 @@ body {
     border: none;
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
-    margin-right: 1rem;
+   
 }
 
 .btn-outline-primary {
