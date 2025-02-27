@@ -5,6 +5,19 @@ AOS.init({
     once: true
 });
 
+// التأكد من أن الصفحة تبدأ من الأعلى عند التحديث
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+}
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+
+// عند تحميل الصفحة
+window.onload = function() {
+    window.scrollTo(0, 0);
+};
+
 // Navbar Scroll Effect
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
@@ -16,24 +29,36 @@ window.addEventListener('scroll', () => {
 });
 
 // Smooth Scroll for Navigation Links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+//         const target = document.querySelector(this.getAttribute('href'));
+//         if (target) {
+//             target.scrollIntoView({
+//                 behavior: 'smooth',
+//                 block: 'start'
+//             });
+//         }
+//     });
+// });
 
 // Portfolio Filtering
 const filterButtons = document.querySelectorAll('.filter-btn');
 const portfolioItems = document.querySelectorAll('.portfolio-item');
 const itemsPerPage = 6;
 let currentPage = 1;
+
+// التعامل مع النقر على زر الرئيسية
+const homeLink = document.querySelector('a[href="#home"]');
+if (homeLink) {
+    homeLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
 
 // Filter portfolio items
 filterButtons.forEach(button => {
@@ -130,7 +155,6 @@ if (contactForm) {
         alert('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً');
     });
 }
-
 
 
 // بيانات الخدمات
@@ -280,9 +304,6 @@ function initializeServices() {
 
             // إظهار قسم التفاصيل
             serviceDetailsSection.classList.remove('d-none');
-
-            // التمرير إلى قسم التفاصيل
-            serviceDetailsSection.scrollIntoView({ behavior: 'smooth' });
         });
     });
     // تنفيذ النقر على أول بطاقة تلقائيًا عند تحميل الصفحة
@@ -301,6 +322,19 @@ document.addEventListener('DOMContentLoaded', function() {
         once: true
     });
 
+    // التأكد من أن الصفحة تبدأ من الأعلى عند التحديث
+    if (history.scrollRestoration) {
+        history.scrollRestoration = 'manual';
+    }
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    };
+
+    // عند تحميل الصفحة
+    window.onload = function() {
+        window.scrollTo(0, 0);
+    };
+
     // Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
@@ -312,24 +346,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Smooth Scroll for Navigation Links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
+    // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    //     anchor.addEventListener('click', function (e) {
+    //         e.preventDefault();
+    //         const target = document.querySelector(this.getAttribute('href'));
+    //         if (target) {
+    //             target.scrollIntoView({
+    //                 behavior: 'smooth',
+    //                 block: 'start'
+    //             });
+    //         }
+    //     });
+    // });
 
     // Portfolio Filtering
     const filterButtons = document.querySelectorAll('.filter-btn');
     const portfolioItems = document.querySelectorAll('.portfolio-item');
     const itemsPerPage = 6;
     let currentPage = 1;
+
+    // التعامل مع النقر على زر الرئيسية
+    const homeLink = document.querySelector('a[href="#home"]');
+    if (homeLink) {
+        homeLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 
     // Filter portfolio items
     filterButtons.forEach(button => {
@@ -452,9 +498,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // تهيئة التفاعل مع الخدمات
     initializeServices();
 
-     // Click first service item automatically
-     const firstServiceItem = document.querySelector('.service-item');
-     if (firstServiceItem) {
-         firstServiceItem.click();
-     }
+    // تفعيل الضغط على أول عنصر في الخدمات
+    const firstServiceItem = document.querySelector('.service-item');
+    if (firstServiceItem) {
+        firstServiceItem.click();
+    }
 });

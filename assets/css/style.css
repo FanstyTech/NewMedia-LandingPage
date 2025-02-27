@@ -265,7 +265,7 @@ body {
 }
 
 .section-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
     color:var(--primary-color) ;
@@ -347,7 +347,7 @@ body {
 }
 
 .service-title {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--text-dark);
     margin: 0;
