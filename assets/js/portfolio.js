@@ -134,14 +134,15 @@ function createProjectCard(project) {
                 </div>
                 <h3 class="portfolio-card-title">${project.title}</h3>
                 <p class="portfolio-card-description">${project.description.substring(0, 100)}${project.description.length > 100 ? '...' : ''}</p>
-                <div class="portfolio-card-meta">
-                    <span><i class="fas fa-user"></i> ${project.client}</span>
-                    <span><i class="fas fa-calendar"></i> ${project.date}</span>
-                </div>
+                
             </div>
         </div>
     `;
 
+    // <div class="portfolio-card-meta">
+    //                 <span><i class="fas fa-user"></i> ${project.client}</span>
+    //                 <span><i class="fas fa-calendar"></i> ${project.date}</span>
+    //             </div>
     // إضافة مستمع حدث للزر عرض المشروع
     const viewButton = element.querySelector('.view-project');
     if (viewButton) {

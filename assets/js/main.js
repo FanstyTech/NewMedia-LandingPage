@@ -131,27 +131,7 @@ if (contactForm) {
     });
 }
 
-// Typing Animation
-const typedElement = document.querySelector('#typed-text');
-if (typedElement) {
-    const typed = new Typed('#typed-text', {
-        strings: [
-            'نقدم خدمات إدارة حسابات السوشيل ميديا',
-            'نصمم هويتك البصرية بإحترافية',
-            'نطور مواقع إلكترونية عصرية',
-            'نخطط حملاتك التسويقية بإبداع',
-            'ندير إعلاناتك بكفاءة عالية'
-        ],
-        typeSpeed: 50,
-        backSpeed: 30,
-        backDelay: 2000,
-        loop: true,
-        showCursor: true,
-        cursorChar: '|',
-        autoInsertCss: true,
-        rtl: true
-    });
-}
+
 
 // بيانات الخدمات
 const servicesData = {
@@ -166,7 +146,8 @@ const servicesData = {
             'تطوير المتاجر الإلكترونية',
             'صيانة وتحديث المواقع',
             'استضافة المواقع'
-        ]
+        ],
+        subIcon :"Icon.svg"
     },
     design: {
         title: 'تصميم جرافيكي',
@@ -179,7 +160,8 @@ const servicesData = {
             'تصميم العلامات التجارية',
             'تصميم الإعلانات',
             'تصميم التغليف'
-        ]
+        ],
+        subIcon :"pen-tool-01.svg"
     },
     ads: {
         title: 'إعلانات ممولة',
@@ -192,7 +174,8 @@ const servicesData = {
             'إعلانات لينكد إن',
             'إعلانات سناب شات',
             'تحليل وتحسين الحملات'
-        ]
+        ],
+        subIcon :"announcement-03.svg"
     },
     marketing: {
         title: 'التسويق الرقمي',
@@ -205,7 +188,8 @@ const servicesData = {
             'التسويق عبر البريد الإلكتروني',
             'تحليلات وتقارير الأداء',
             'إدارة السمعة الإلكترونية'
-        ]
+        ],
+        subIcon :"target-04.svg"
     },
     motion: {
         title: 'موشن جرافيكس',
@@ -218,7 +202,8 @@ const servicesData = {
             'مقدمات وخواتم',
             'انفوجرافيك متحرك',
             'تصميم الشخصيات'
-        ]
+        ],
+        subIcon :"play-square.svg"
     },
     social: {
         title: 'إدارة حسابات السوشيال ميديا',
@@ -231,7 +216,8 @@ const servicesData = {
             'التفاعل مع الجمهور',
             'تحليل الأداء',
             'تقارير شهرية'
-        ]
+        ],
+        subIcon :"announcement-03.svg"
     }
 };
 
@@ -267,7 +253,7 @@ function initializeServices() {
                                         ${serviceData.features.map(feature => `
 
                                             <li class="feature-item d-flex align-items-start gap-3 mb-3" data-aos="fade-up" data-aos-delay="100">
-                                                <i class="fas fa-check text-primary"></i>
+                                                <img src="assets/images/services/icons/${serviceData.subIcon}" alt="${serviceData.feature}" class="img-fluid">
                                                 <span>${feature}</span>
                                             </li>
                                         
@@ -275,7 +261,7 @@ function initializeServices() {
                                     
                                     </ul>
                                     <div class="mt-4">
-                                        <a href="#contact" class="btn btn-primary rounded-pill">تواصل معنا واتساب </a>
+                                        <a href="https://wa.me/+972568031114"   target="_blank" class="btn btn-primary rounded-pill">تواصل معنا واتساب </a>
                                     </div>
                                 </div>
                             </div>
